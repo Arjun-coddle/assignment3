@@ -92,6 +92,10 @@ nav button{
     color: #FFFFFF;
     display: flex;
     position: relative;
+    justify-content: end;
+}
+.block1-img{
+    text-align: end;
 }
 .block1-electicPowerImg{
     position: absolute;
@@ -113,7 +117,7 @@ nav button{
     width: 659px;
     position: absolute;
     margin-top: 166px;
-    margin-left: 83px;
+    margin-right: 580px;
 }
 .block1-contents h1{
     width: 659px;
