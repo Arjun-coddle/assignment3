@@ -10,8 +10,8 @@ select{
 }
 /* navbar */
 nav{
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
     z-index: 10;
     background-color: #FFFFFF;
     width: 100%;
@@ -23,7 +23,7 @@ nav{
     width: 100%;
     max-width: 1380px;
     height: 80px;
-    padding: 16px 80px 16px 80px;
+    padding-top: 16px;
     gap: 48px;
     display: flex;
     justify-content: center;
@@ -71,6 +71,11 @@ nav a{
     height: 18px;
     margin-left: -17px;
     margin-top: -5px;
+    background-color: #00A8A8;
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
 }
 nav button{
     width: 108px;
@@ -97,9 +102,12 @@ nav button{
     display: flex;
     position: relative;
     justify-content: end;
+    overflow: hidden;
 }
 .block1-img{
-    text-align: end;
+    width: 1220px;
+    height: 778px;
+    margin-right: -310px;
 }
 .block1-electicPowerImg{
     position: absolute;
@@ -314,6 +322,7 @@ nav button{
     width: 268px;
     height: 220px;
     object-fit: cover;
+    padding: 6px;
 }
 .block5-cardlayout1{
     width: 100%;
@@ -359,6 +368,7 @@ nav button{
     display: flex;
     justify-content: center;
     gap: 80px;
+    overflow: hidden;
 }
 .block6-leftside{
     width: 525px;
