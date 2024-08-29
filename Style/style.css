@@ -16,6 +16,8 @@ nav{
     background-color: #FFFFFF;
     width: 100%;
     border-bottom: 2px solid;
+    display: flex;
+    justify-content: center;
 }
 .nav-container {
     width: 100%;
@@ -84,6 +86,8 @@ nav button{
     width: 100%;
     background-image: url('/assets/BG.png');
     height: 741px;
+    display: flex;
+    justify-content: center;
 }
 .block1-container{
     width: 100%;
@@ -141,6 +145,12 @@ nav button{
     margin-left: 490px;
 }
 /* block 2 */
+.block2{
+    width: 100%;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+}
 .block2-container{
     width: 100%;
     max-width: 1380px;
@@ -185,6 +195,12 @@ nav button{
     margin-top: 16px;
 }
 /* block 3 */
+.block3{
+    width: 100%;
+    height: 638px;
+    display: flex;
+    justify-content: center;
+}
 .block3-container{
     max-width: 1380px;
     width: 100%;
@@ -217,6 +233,8 @@ nav button{
     width: 100%;
     height: 471px;
     background-color: #161E21;
+    display: flex;
+    justify-content: center;
 }
 .block4-container{
     width: 100%;
@@ -260,6 +278,12 @@ nav button{
     color: #697077;
 }
 /* block 5 */
+.block5{
+    width: 100%;
+    height: 812px;
+    display: flex;
+    justify-content: center;
+}
 .block5-container{
     width: 100%;
     max-width: 1380px;
@@ -322,6 +346,12 @@ nav button{
     font-size: 20px;
 }
 /* block 6 */
+.block6{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
 .block6-container{
     width: 100%;
     max-width: 1380px;
@@ -366,6 +396,8 @@ footer{
     width: 100%;
     height: 136px;
     background-color: #161E21;
+    display: flex;
+    justify-content: center;
 }
 .footer-container{
     width: 100%;
