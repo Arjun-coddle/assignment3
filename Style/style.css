@@ -9,6 +9,14 @@ select{
     border: 0;
 }
 /* navbar */
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-bottom: 2px solid;
+}
 .nav-container {
     width: 100%;
     max-width: 1380px;
@@ -18,24 +26,29 @@ select{
     display: flex;
     justify-content: center;
 }
-.nav-pages{
-    width: 526px;
-    height: 48px;
-    gap: 16;
+.nav-logo{
+    max-width: 132px;
+    height: 41px;
 }
-nav ol{
-    margin: revert;
+.nav-logo img{
+    width: 100%;
+    height: 41px;
+    object-fit: cover;
+}
+.nav-pages{
+    max-width: 526px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 nav a{
     text-decoration: none;
     color: black;
     padding: 12px;
 }
-nav li{
-    display: inline;
-}
 .nav-login{
-    width: 366px;
+    max-width: 366px;
     height: 48px;
     display: flex;
     justify-content: end;
@@ -64,19 +77,25 @@ nav button{
     border: 2px #00A8A8;
     background-color: #00A8A8;
     color: aliceblue;
+    font-size: 18px;
 }
 /* Block 1 */
-.block1-container{
+.block1{
+    width: 100%;
     background-image: url('/assets/BG.png');
+    height: 741px;
+}
+.block1-container{
     width: 100%;
     max-width: 1380px;
     height: 741px;
     color: #FFFFFF;
     display: flex;
-    justify-content: center;
+    position: relative;
 }
 .block1-electicPowerImg{
-    margin-left: 160px;
+    position: absolute;
+    margin-left: 640px;
 }
 .block1 button{
     width: 178px;
@@ -87,27 +106,35 @@ nav button{
     padding: 16px;
     color: #FFFFFF;
     margin-top: 32px;
+    font-size: 20px;
+    font-weight: 700;
 }
 .block1-contents{
     width: 659px;
-    height: 531px;
+    position: absolute;
     margin-top: 166px;
     margin-left: 83px;
 }
 .block1-contents h1{
-    width: 405px;
+    width: 659px;
+    height: 250px;
     font-weight: 700;
-    font-size: 71px;
+    font-size: 140px;
     line-height: 140px;
+    letter-spacing: -9px;
 }
 .block1-contents p{
     width: 334px;
     height: 49px;
     font-weight: 400;
     line-height: 22px;
+    margin-top: 80px;
+    font-size: 22px;
 }
 .block1-carImg{
-    margin-top: -530px;
+    position: absolute;
+    margin-top: 211px;
+    margin-left: 490px;
 }
 /* block 2 */
 .block2-container{
@@ -140,8 +167,14 @@ nav button{
 .block2-box{
     width: 218px;
     height: 176px;
+    padding: 16px;
+}
+.block2-box img{
+    width: 48px;
+    height: 48px;
 }
 .block2-box h4{
+    font-size: 20px;
     margin-top: 16px;
 }
 .block2-box p{
@@ -166,17 +199,26 @@ nav button{
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 64px;
 }
 .block3-box{
     width: 249px;
     height: 139px;
+}
+.block3-box p{
+    margin-top: 16px;
+}
+/* block 4 */
+.block4{
+    width: 100%;
+    height: 471px;
+    background-color: #161E21;
 }
 .block4-container{
     width: 100%;
     max-width: 1380px;
     height: 471px;
     padding: 80px;
-    background-color: #161E21;
     text-align: center;
     color: #FFFFFF;
 }
@@ -194,6 +236,10 @@ nav button{
     display: flex;
     justify-content: center;
     gap: 24px;
+}
+.block4-row img{
+    width: 48px;
+    height: 48px;
 }
 .block4-box{
     width: 262px;
@@ -220,7 +266,7 @@ nav button{
     text-align: center;
 }
 .block5-row{
-    width: 100%;
+    width: 1220;
     max-width: 1380px;
     height: 422px;
     margin-top: 64px;
@@ -230,6 +276,16 @@ nav button{
 }
 .block5-card{
     border: #69707770 1px solid;
+    width: 268px;
+}
+.block5-card-img{
+    width: 268px;
+    height: 220px;
+}
+.block5-card-img img{
+    width: 268px;
+    height: 220px;
+    object-fit: cover;
 }
 .block5-cardlayout1{
     width: 100%;
@@ -256,10 +312,10 @@ nav button{
     height: 56px;
     margin-top: 64px;
     border-radius: 10px;
-    padding: 16px;
     border: #00A8A8 2px solid;
     background-color: #00A8A8;
     color: #FFFFFF;
+    font-size: 20px;
 }
 /* block 6 */
 .block6-container{
@@ -268,26 +324,34 @@ nav button{
     height: auto;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 80px;
 }
 .block6-leftside{
     width: 525px;
     height: 566px;
-    padding: 0px, 80px, 0px, 80px;
+    text-align: center;
     margin-top: 10px;
 }
 .block6-rightside{
     width: 514px;
     height: 444px;
-    margin-top: 10px;
 }
 .block6-content{
     width: 100%;
     height: 180px;
     margin-top: 64px;
 }
+.block6-content h3{
+    font-size: 46px;
+}
 .block6-content p{
     margin-top: 48px;
+    line-height: 25px;
+}
+.block6-btns{
+    margin-top: 64px;
+    display: flex;
+    gap: 16px;
 }
 .block6-playstore{
     width: 135px;
@@ -295,6 +359,11 @@ nav button{
 }
 /* footer  */
 footer{
+    width: 100%;
+    height: 136px;
+    background-color: #161E21;
+}
+.footer-container{
     width: 100%;
     max-width: 1380px;
     height: 136px;
