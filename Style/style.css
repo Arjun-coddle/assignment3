@@ -109,10 +109,8 @@ nav button{
     width: 1220px;
     height: 778px;
     margin-right: -310px;
-}
-.block1-electicPowerImg{
     position: absolute;
-    margin-left: 640px;
+    object-fit: contain;
 }
 .block1 button{
     width: 178px;
@@ -229,6 +227,10 @@ nav button{
     justify-content: center;
     gap: 24px;
     margin-bottom: 64px;
+}
+.block3-img{
+    width: 520px;
+    height: 478px;
 }
 .block3-box{
     width: 249px;
