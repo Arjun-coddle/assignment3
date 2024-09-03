@@ -51,6 +51,7 @@ nav a{
 }
 .nav-login{
     max-width: 366px;
+    width: 366px;
     height: 48px;
     display: flex;
     justify-content: end;
@@ -271,8 +272,8 @@ nav button{
     gap: 24px;
 }
 .block4-row img{
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
 }
 .block4-box{
     width: 262px;
@@ -284,6 +285,7 @@ nav button{
 .block4-box h4{
     color: #161E21;
     margin-top: 16px;
+    font-size: x-large;
 }
 .block4-box p{
     color: #697077;
@@ -343,6 +345,7 @@ nav button{
 .block5-cardlayout2 a{
     text-decoration: none;
     color: #00A8A8;
+    font-size: 20px;
 }
 .block5-btn{
     text-align: center;
