@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/style.css">
     <title>Assignment 3</title>
+
+    <script src="https://kit.fontawesome.com/67dd5d9526.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -16,13 +19,18 @@
             <div class="nav-logo">
                 <img src="./assets/Text.png" alt="logo">
             </div>
-            <div class="nav-pages">
-                <a href="#">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="#">HOW IT WORK</a>
-                <a href="#">CHARGING</a>
-                <a href="#">VECHILE</a>
-                <select></select>
+            <div class="nav-pages" id="nav-pages">
+                <div class="nav-page-container">
+                    <div class="nav-closeBtn" onclick="hidemenu()">
+                        <i class="fa-solid fa-square-xmark"></i>
+                    </div>
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">HOW IT WORK</a>
+                    <a href="#">CHARGING</a>
+                    <a href="#">VECHILE</a>
+                    <select></select>
+                </div>
             </div>
             <div class="nav-login">
                 <div class="nav-cart">
@@ -32,6 +40,9 @@
                 </div>
                 <div class="login-btn">
                     <button>login</button>
+                </div>
+                <div class="nav-user-logo" onclick="showbar()">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </div>
@@ -251,6 +262,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let navlinks = document.getElementById("nav-pages");
+        function showbar () {
+            navlinks.style.right='-150px'
+        }
+        function hidemenu(){
+            navlinks.style.right='-1500px'
+        }
+    </script>
 </body>
 
 </html>
